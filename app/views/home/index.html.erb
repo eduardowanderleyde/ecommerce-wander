@@ -23,13 +23,13 @@
   <div class="w-full bg-green-100 py-10">
     <div class="bg-green-100 p-10 rounded-lg shadow-lg w-full max-w-screen-xl mx-auto">
       <h2 class="text-2xl font-bold mb-6 text-center">Our Latest Posts</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <% @posts.each do |post| %>
-          <div class="post-card">
-            <img src="<%= post.image_url %>" alt="<%= post.title %>" class="post-image w-full h-40 object-cover rounded mb-4">
-            <h3 class="post-title"><%= post.title %></h3>
-            <p class="post-description"><%= truncate(post.description, length: 100) %></p>
-            <%= link_to "Read More", post_path(post), class: "read-more" %>
+          <div class="post-card bg-white rounded-lg shadow-md overflow-hidden p-4">
+            <img src="<%= post.image_url %>" alt="<%= post.title %>" class="post-image w-full h-40 object-cover mb-4">
+            <h3 class="post-title text-lg font-semibold mb-2"><%= post.title %></h3>
+            <p class="post-description text-gray-600 mb-4"><%= truncate(post.description, length: 100) %></p>
+            <%= link_to "Read More", post_path(post), class: "read-more block mt-4 text-blue-500 hover:underline" %>
           </div>
         <% end %>
       </div>

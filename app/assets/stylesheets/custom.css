@@ -1,16 +1,18 @@
 /* app/assets/stylesheets/custom.css */
 .post-image {
-  width: 200px; /* ajuste a largura conforme necessário */
-  height: auto; /* mantém a proporção da imagem */
-  max-height: 150px; /* limite máximo de altura */
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
 }
 
 .post-card {
-  background-color: #F5F5DC; /* verde claro para os posts */
+  background-color: #e6ffe6; /* verde claro para os posts */
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s;
+  overflow: hidden; /* Garante que o conteúdo fique dentro do card */
 }
 
 .post-card:hover {
