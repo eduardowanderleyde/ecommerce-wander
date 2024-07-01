@@ -1,0 +1,38 @@
+/* app/assets/stylesheets/custom.css */
+.post-image {
+  width: 200px; /* ajuste a largura conforme necessário */
+  height: auto; /* mantém a proporção da imagem */
+  max-height: 150px; /* limite máximo de altura */
+}
+
+.post-card {
+  background-color: #F5F5DC; /* verde claro para os posts */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+  font-size: 1.25rem; /* Tamanho da fonte */
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  color: #4a5568; /* Cor do texto */
+}
+
+.read-more {
+  margin-top: 16px;
+  color: #3182ce; /* Azul para o link */
+  text-decoration: underline;
+}
+
+.read-more:hover {
+  color: #2b6cb0;
+}

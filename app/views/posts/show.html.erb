@@ -1,0 +1,9 @@
+<!-- app/views/posts/show.html.erb -->
+<div class="bg-green-100 min-h-screen flex flex-col items-center justify-center">
+  <div class="bg-white p-10 rounded-lg shadow-lg text-center mb-8">
+    <h1 class="text-3xl font-bold mb-4"><%= @post.title %></h1>
+    <img src="<%= @post.image_url %>" alt="<%= @post.title %>" class="w-full h-40 object-cover rounded mb-4">
+    <p class="text-gray-600 mb-4"><%= @post.description %></p>
+    <%= link_to "Back to Home", root_path, class: "text-blue-500 underline hover:text-blue-700" %>
+  </div>
+</div>

@@ -1,9 +1,7 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# db/seeds.rb
+Post.create(title: "First Post", description: "Description for the first post", image_url: ActionController::Base.helpers.asset_path("car.png"))
+Post.create(title: "Second Post", description: "Description for the second post", image_url: ActionController::Base.helpers.asset_path("car2.png"))
+# db/seeds.rb
+Post.create(title: "Third Post", description: "Description for the first post", image_url: ActionController::Base.helpers.asset_path("car3.png"))
+Post.create(title: "Fourth Post", description: "Description for the second post", image_url: ActionController::Base.helpers.asset_path("car4.png"))
+Post.create(title: "Fifth Post", description: "Description for the second post", image_url: ActionController::Base.helpers.asset_path("car5.jpeg"))
